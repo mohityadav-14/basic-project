@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 import "./App.css";
+import Form from "./Components/form";
+import ApiFetch from "./Components/ApiFetch";
+import Counter from "./Components/Counter";
+import Todo from "./Components/Todo";
 
 const App = () => {
   const [task, setTask] = useState("");
@@ -31,6 +35,10 @@ const App = () => {
           <li key={index} >{num}</li>
         ))}
       </ul>
+     <Form/>
+     <ApiFetch/>
+     <Counter/>
+     <Todo/>
     </>
   );
 };
